@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100 p-6 flex gap-[8rem] justify-center">
+
+    
+    <div class="space-y-4">
+        
+        <div class="flex items-center justify-between bg-white p-4 rounded shadow w-[19rem] h-[8rem]">
+            <span class="text-lg">Veg biriyani - $40</span>
+            <button 
+                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                onclick="addToCart('Orange Juice', 40)"
+            >
+                ADD
+            </button>
+        </div>
+        <div class="flex items-center justify-between bg-white p-4 rounded shadow w-[19rem] h-[8rem]">
+            <span class="text-lg">Sweet Corn Soup - $50</span>
+            <button 
+                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                onclick="addToCart('Sweet Corn Soup', 50)"
+            >
+                ADD
+            </button>
+        </div>
+        <div class="flex items-center justify-between bg-white p-4 rounded shadow w-[19rem] h-[8rem]">
+            <span class="text-lg">Orange Juice - $50</span>
+            <button 
+                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                onclick="addToCart('Orange Juice', 50)"
+            >
+                ADD
+            </button>
+        </div>
+        <div class="flex items-center justify-between bg-white p-4 rounded shadow w-[19rem] h-[8rem]">
+            <span class="text-lg">Com fried Rice - $65</span>
+            <button 
+                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                onclick="addToCart('Com fried Rice', 65)"
+            >
+                ADD
+            </button>
+        </div>
+        <div class="flex items-center justify-between bg-white p-4 rounded shadow w-[19rem] h-[8rem]">
+            <span class="text-lg">Aloo Tikis - $70</span>
+            <button 
+                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                onclick="addToCart('Aloo Tikis', 70)"
+            >
+                ADD
+            </button>
+        </div>
+    </div>
+
+    <div class=" w-[31rem]">
+        <h2 class="text-xl font-semibold mt-6">Your Cart</h2>
+    <div id="cart" class="cart bg-white p-4 rounded shadow mt-4"></div>
+    <div id="total" class="text-lg font-bold mt-2">Total: $0</div>
+    <button 
+        class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+        onclick="proceedToCheckout()"
+    >
+        PROCEED TO CHECKOUT
+    </button>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
