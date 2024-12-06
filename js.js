@@ -34,7 +34,17 @@
 
     }
 
-
+    const shoppingCart = new ShoppingCart();
+    function proceedToCheckout() {
+        shoppingCart.proceedToCheckout();
+    }
+    function  addToCart(item, price){
+        shoppingCart.addToCart(item, price);
+    }
+    function updateCart(){
+        shoppingCart.updateCart();
+    }
+    
 
 
     
